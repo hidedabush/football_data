@@ -238,3 +238,58 @@ UPDATE roster
 SET stadium_name = 'Arisure Stadium'
 WHERE roster_id = '232024';
 
+-- @block
+UPDATE roster
+SET team_coach = 'Brian Schottenheimer'
+WHERE roster_id = '22024';
+
+UPDATE roster
+SET team_coach = 'Dan Quinn'
+WHERE roster_id = '42024';
+
+UPDATE roster
+SET team_coach = 'Ben Johnson'
+WHERE roster_id = '62024';
+
+UPDATE roster
+SET team_coach = 'Mike Macdonald'
+WHERE roster_id = '112024';
+
+UPDATE roster
+SET team_coach = 'Kellen Moore'
+WHERE roster_id = '132024';
+
+UPDATE roster
+SET team_coach = 'Raheem Morris'
+WHERE roster_id = '152024';
+
+UPDATE roster
+SET team_coach = 'Dave Canales'
+WHERE roster_id = '162024';
+
+UPDATE roster
+SET team_coach = 'Mike Vrabel'
+WHERE roster_id = '172024';
+
+UPDATE roster
+SET team_coach = 'Aaron Glenn'
+WHERE roster_id = '202024';
+
+UPDATE roster
+SET team_coach = 'Brian Callahan'
+WHERE roster_id = '252024';
+
+UPDATE roster
+SET team_coach = 'Liam Coen',
+    stadium_name = 'EverBank Stadium'
+WHERE roster_id = '272024';
+
+UPDATE roster
+SET team_coach = 'Jim Harbaugh'
+WHERE roster_id = '302024';
+
+UPDATE roster
+SET team_coach = 'Pete Carroll'
+WHERE roster_id = '322024';
+
+
