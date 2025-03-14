@@ -23,8 +23,6 @@ VALUES (1, 'New York Giants', 'MetLife Stadium', 'East Rutherford', 'Brian Dabol
 ALTER TABLE Roster
 ADD division ENUM('AFC East', 'AFC North', 'AFC South', 'AFC West', 'NFC East', 'NFC North', 'NFC South', 'NFC West') NOT NULL;
 
--- @block
-SELECT * FROM roster;
 
 -- @block
 
@@ -33,8 +31,6 @@ SET roster_id = 12024,
     division = 'NFC East'
 WHERE roster_id = 1;
 
--- @block
-SELECT * FROM roster;
 
 -- @block
 ALTER TABLE Roster
@@ -60,8 +56,6 @@ VALUES
 (152024, 'Atlanta Falcons', 'Mercedes-Benz Stadium', 'Atlanta', 'Arthur Smith', 'Arthur Blank', '1965-06-30', '4-4'),
 (162024, 'Carolina Panthers', 'Bank of America Stadium', 'Charlotte', 'Frank Reich', 'David Tepper', '1993-10-26', '2-6');
 
--- @block
-SELECT * FROM roster;
 
 -- @block
 INSERT INTO Roster (roster_id, team_name, stadium_name, team_city, team_coach, team_owner, team_established_DATE, team_record, division)
@@ -83,8 +77,6 @@ VALUES
 (312024, 'Denver Broncos', 'Empower Field at Mile High', 'Denver', 'Sean Payton', 'Greg Penner and Carrie Penner Trusts', '1960-11-16', '3-5' , 'AFC West'),
 (322024, 'Las Vegas Raiders', 'Allegiant Stadium', 'Paradise', 'Josh McDaniels', 'Mark Davis', '1960-11-16', '3-5' , 'AFC West');
 
--- @block
-SELECT * FROM roster;
 
 -- @block
 UPDATE Roster
@@ -106,7 +98,198 @@ SET team_record = '12-5-0',
     division = 'NFC East'
 WHERE roster_id = 42024;
 
+
+
+-- @block
+UPDATE Roster
+SET team_record = '11-6-0',
+    division = 'NFC North'
+WHERE roster_id = 52024;
+
+UPDATE Roster
+SET team_record = '5-12-0',
+    division = 'NFC North'
+WHERE roster_id = 62024;
+
+UPDATE Roster
+SET team_record = '14-3-0',
+    division = 'NFC North'
+WHERE roster_id = 72024;
+
+UPDATE Roster
+SET team_record = '15-2-0',
+    division = 'NFC North'
+WHERE roster_id = 82024;
+
+
+-- @block
+UPDATE Roster
+SET team_record = '6-11-0',
+    division = 'NFC West'
+WHERE roster_id = 92024;
+
+UPDATE Roster
+SET team_record = '10-7-0',
+    division = 'NFC West'
+WHERE roster_id = 102024;
+
+UPDATE Roster
+SET team_record = '10-7-0',
+    division = 'NFC West'
+WHERE roster_id = 112024;
+
+UPDATE Roster
+SET team_record = '8-9-0',
+    division = 'NFC West'
+WHERE roster_id = 122024;
+
+UPDATE Roster
+SET team_record = '5-12-0',
+    division = 'NFC South'
+WHERE roster_id = 132024;
+
+UPDATE Roster
+SET team_record = '10-7-0',
+    division = 'NFC South'
+WHERE roster_id = 142024;
+
+UPDATE Roster
+SET team_record = '8-9-0',
+    division = 'NFC South'
+WHERE roster_id = 152024;
+
+UPDATE Roster
+SET team_record = '5-12-0',
+    division = 'NFC South'
+WHERE roster_id = 162024;
+
+-- @block
+UPDATE Roster
+SET team_record = '4-13-0'
+WHERE roster_id = 172024;
+
+UPDATE Roster
+SET team_record = '13-4-0'
+WHERE roster_id = 182024;
+
+UPDATE Roster
+SET team_record = '8-9-0'
+WHERE roster_id = 192024;
+
+UPDATE Roster
+SET team_record = '5-12-0'
+WHERE roster_id = 202024;
+
 -- @block
 SELECT * FROM roster;
+
+-- @block
+UPDATE Roster
+SET team_record = '12-5-0'
+WHERE roster_id = 212024;
+
+UPDATE Roster
+SET team_record = '9-8-0'
+WHERE roster_id = 222024;
+
+UPDATE Roster
+SET team_record = '10-7-0'
+WHERE roster_id = 232024;
+
+UPDATE Roster
+SET team_record = '3-14-0'
+WHERE roster_id = 242024;
+
+-- @block
+UPDATE Roster
+SET team_record = '3-14-0'
+WHERE roster_id = 252024;
+
+UPDATE Roster
+SET team_record = '8-9-0'
+WHERE roster_id = 262024;
+
+UPDATE Roster
+SET team_record = '4-13-0'
+WHERE roster_id = 272024;
+
+UPDATE Roster
+SET team_record = '10-7-0'
+WHERE roster_id = 282024;
+
+UPDATE Roster
+SET team_record = '15-2-0'
+WHERE roster_id = 292024;
+
+UPDATE Roster
+SET team_record = '11-6-0'
+WHERE roster_id = 302024;
+
+UPDATE Roster
+SET team_record = '10-7-0'
+WHERE roster_id = 312024;
+
+UPDATE Roster
+SET team_record = '4-13-0'
+WHERE roster_id = 322024;
+
+-- @block
+UPDATE roster
+SET stadium_name = 'Arisure Stadium'
+WHERE roster_id = '232024';
+
+-- @block
+UPDATE roster
+SET team_coach = 'Brian Schottenheimer'
+WHERE roster_id = '22024';
+
+UPDATE roster
+SET team_coach = 'Dan Quinn'
+WHERE roster_id = '42024';
+
+UPDATE roster
+SET team_coach = 'Ben Johnson'
+WHERE roster_id = '62024';
+
+UPDATE roster
+SET team_coach = 'Mike Macdonald'
+WHERE roster_id = '112024';
+
+UPDATE roster
+SET team_coach = 'Kellen Moore'
+WHERE roster_id = '132024';
+
+UPDATE roster
+SET team_coach = 'Raheem Morris'
+WHERE roster_id = '152024';
+
+UPDATE roster
+SET team_coach = 'Dave Canales'
+WHERE roster_id = '162024';
+
+UPDATE roster
+SET team_coach = 'Mike Vrabel'
+WHERE roster_id = '172024';
+
+UPDATE roster
+SET team_coach = 'Aaron Glenn'
+WHERE roster_id = '202024';
+
+UPDATE roster
+SET team_coach = 'Brian Callahan'
+WHERE roster_id = '252024';
+
+UPDATE roster
+SET team_coach = 'Liam Coen',
+    stadium_name = 'EverBank Stadium'
+WHERE roster_id = '272024';
+
+UPDATE roster
+SET team_coach = 'Jim Harbaugh'
+WHERE roster_id = '302024';
+
+UPDATE roster
+SET team_coach = 'Pete Carroll'
+WHERE roster_id = '322024';
 
 

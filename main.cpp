@@ -5,14 +5,10 @@
 #include <algorithm>
 #include <sstream>
 
-#include "FootballPlayer.h"
-#include "Quarterback.h"
-#include "Receiver.h"
-#include "Runningback.h"
 
 using namespace std;
 
-typedef unordered_map<string, FootballPlayer*> PlayerMap;
+/*typedef unordered_map<string, FootballPlayer*> PlayerMap;
 
 void loadPlayers(PlayerMap& roster, const string& filename) {
     ifstream file(filename);
@@ -189,3 +185,4 @@ int main() {
 
     return 0;
 }
+*/
